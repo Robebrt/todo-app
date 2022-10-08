@@ -1,0 +1,11 @@
+#root{
+  width: 100vw;
+  margin: 0;
+  height: 100vh;
+}
+.form > h1{
+  text-align: center;
+}
+.form > button {
+  margin-left: 8px;
+}
