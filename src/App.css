@@ -3,3 +3,15 @@
   height: fit-content;
   width: fit-content;
 }
+.cards-holder{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.cards-holder >div{
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+}

@@ -2,17 +2,14 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import './App.css'
-import Card from './card'
+import {Card} from './Card'
 
 
 function App() {
   const [cards,setCards] = useState([]);
   const onAddBtnClick = event => {
     const text = document.getElementById("toDoInput").value;
-    console.log(text);
-    console.log(cards);
-    console.log(typeof cards);
-    //setCards(cards.concat(<Card key={cards.length} text={text}/>));
+    setCards([...cards,text]);
   }
   return (
     <>
@@ -22,7 +19,7 @@ function App() {
       <button onClick={onAddBtnClick}>GO</button>
     </div>
     <div className='cards-holder'>
-      {cards}
+      {cards.map((item,i) => (<Card text={item}/>))}
     </div>
     </>
   )
