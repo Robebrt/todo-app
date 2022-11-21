@@ -1,5 +1,26 @@
 .card {
     height: 100px;
-    width: 100px;
-    background-color: aqua;
+    width: 200px;
+    margin: 10px 10px 0 0;
+    background-color: rgb(145, 173, 248);
+    border-radius: 10px;
+}
+.card-number {
+    margin: 4px 0 0 4px;
+    font-size: 25px;
+}
+.card-text{
+    text-align: center;
+    font-size: 20px;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+.delete-card-button{
+    height:20px;
+    margin-right: 5px;
+    background-color: red;
+    /* border: none; */
+    margin-top: 3px;
 }
